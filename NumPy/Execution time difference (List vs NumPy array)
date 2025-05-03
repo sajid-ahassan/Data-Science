@@ -1,0 +1,26 @@
+#list
+import numpy as np
+import time
+
+limit = 10000000;
+l1 = [x for x in range(limit)]
+
+st = time.time();
+l2 = [x*2 for x in l1]
+ed = time.time()
+print(ed-st)
+# print(l2)
+
+#NumPy array
+
+import numpy as np
+import time
+
+limit = 10000000;
+l1 = np.array([x for x in range(limit)])
+
+st = time.time()
+l1 = l1*2
+ed = time.time()
+print(ed-st)
+# print(l1)
